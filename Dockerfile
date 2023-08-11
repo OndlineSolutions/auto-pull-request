@@ -6,7 +6,7 @@ LABEL \
   "repository"="https://github.com/OndlineSolutions/auto-pull-request" \
   "maintainer"="Vitor Nunes <evitorfiler@gmail.com>"
 
-RUN echo https://vn-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
+RUN echo https://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
   apk add --no-cache git hub bash
 
 ADD *.sh /
